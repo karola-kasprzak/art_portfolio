@@ -9664,8 +9664,58 @@ a.text-dark:hover, a.text-dark:focus {
 
 .navbar ul li a {
   color: #ffffff !important;
+  font-size: 1.3rem;
 }
 
 .navbar ul li a:hover {
   text-decoration: underline;
+}
+
+.section-a {
+  margin: 10rem 0;
+}
+
+.section-a h1 {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  color: #6c757d;
+  padding: 3rem 0;
+}
+
+.section-a img {
+  height: 70vh;
+}
+
+.section-a .btn-outline-primary {
+  border: 2px solid #007bff;
+  border-radius: 0;
+  text-transform: uppercase;
+  color: #6c757d;
+  margin: 3rem 0;
+}
+
+.section-a .btn-outline-primary:hover {
+  color: #fff;
+}
+
+.section-b {
+  background-color: #e9ecef;
+}
+
+.section-b img {
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  color: #6c757d;
+  padding: 3rem 0;
+}
+
+hr {
+  width: 120px;
+  border-top: 2px solid #007bff;
 }
