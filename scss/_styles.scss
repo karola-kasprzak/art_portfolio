@@ -25,6 +25,11 @@
   }
 }
 
+@mixin gray-border {
+  border: 2px solid $gray-400;
+  border-radius: 0;
+}
+
 //styles
 
 .navbar {
@@ -58,10 +63,6 @@
     img {
       height: 70vh;
     }
-
-    .btn-outline-primary {
-      @include button()
-    }
 }
 
 .section-b {
@@ -69,9 +70,16 @@
 
   img {
     object-fit: cover;
-    width: 250px;
-    height: 250px;
+    width: 270px;
+    height: 270px;
   }
+
+ 
+
+}
+
+.form-control {
+  @include gray-border()
 }
 
 h2 {
@@ -80,4 +88,13 @@ h2 {
 
 hr {
   @include hr-short-blue()
+}
+
+.btn-outline-primary {
+  @include button()
+}
+
+footer {
+  color: $gray-600;
+
 }

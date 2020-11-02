@@ -9686,26 +9686,19 @@ a.text-dark:hover, a.text-dark:focus {
   height: 70vh;
 }
 
-.section-a .btn-outline-primary {
-  border: 2px solid #007bff;
-  border-radius: 0;
-  text-transform: uppercase;
-  color: #6c757d;
-  margin: 3rem 0;
-}
-
-.section-a .btn-outline-primary:hover {
-  color: #fff;
-}
-
 .section-b {
   background-color: #e9ecef;
 }
 
 .section-b img {
   object-fit: cover;
-  width: 250px;
-  height: 250px;
+  width: 270px;
+  height: 270px;
+}
+
+.form-control {
+  border: 2px solid #ced4da;
+  border-radius: 0;
 }
 
 h2 {
@@ -9718,4 +9711,20 @@ h2 {
 hr {
   width: 120px;
   border-top: 2px solid #007bff;
+}
+
+.btn-outline-primary {
+  border: 2px solid #007bff;
+  border-radius: 0;
+  text-transform: uppercase;
+  color: #6c757d;
+  margin: 3rem 0;
+}
+
+.btn-outline-primary:hover {
+  color: #fff;
+}
+
+footer {
+  color: #6c757d;
 }
