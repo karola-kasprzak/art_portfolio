@@ -1,0 +1,20 @@
+.navbar {
+  margin-top: 0;
+  height: 6rem;
+
+  ul {
+    margin: 0 auto;
+  
+    li {
+    text-transform: uppercase;
+      a {
+        color: #ffffff !important; 
+        
+        &:hover {
+      
+          text-decoration: underline;
+        }
+      }   
+    }
+  }
+}

@@ -9648,3 +9648,24 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
+
+.navbar {
+  margin-top: 0;
+  height: 6rem;
+}
+
+.navbar ul {
+  margin: 0 auto;
+}
+
+.navbar ul li {
+  text-transform: uppercase;
+}
+
+.navbar ul li a {
+  color: #ffffff !important;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+}

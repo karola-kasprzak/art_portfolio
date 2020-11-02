@@ -1,5 +1,8 @@
-
+//bootstrap main scss
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
-@import '_styles.scss';
+
+//custom variables and styling
 @import '_variables.scss';
 @import '_typography.scss';
+@import '_styles.scss';
+

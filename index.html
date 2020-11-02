@@ -6,26 +6,25 @@
   <title>My Art Portfolio</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body class="container border">
+<body class="container-fluid">
      
-    <nav class="navbar navbar-light bg-primary">
-      <ul class="nav">
+    <nav class="navbar bg-primary">
+      <ul class="nav justify-content-center">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Active</a>
+          <a class="nav-link mx-5" href="#about">O mnie</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link mx-5" href="#portfolio">Portfolio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        
+          <a class="nav-link mx-5" href="#contact">Kontakt</a>
+        </li>        
       </ul>
       
     </nav>
     
     <article class="container">
-      <h1>O Mnie</h1>
+      <h1 id="about">O Mnie</h1>
       <hr>
       <img src="img\lew.jpeg" class="img-circle" alt="">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis nunc sed blandit libero. Sit amet nisl purus in. Nulla facilisi morbi tempus iaculis urna id volutpat lacus. Turpis massa tincidunt dui ut ornare lectus sit amet. Lorem sed risus ultricies tristique nulla. Egestas maecenas pharetra convallis posuere morbi leo urna molestie at. Ultrices tincidunt arcu non sodales neque. Ultricies lacus sed turpis tincidunt id aliquet. Egestas dui id ornare arcu odio ut. Morbi blandit cursus risus at ultrices mi tempus imperdiet nulla. Volutpat odio facilisis mauris sit amet massa vitae tortor. Eu ultrices vitae auctor eu augue ut lectus arcu. Dignissim sodales ut eu sem integer.</p>
@@ -34,7 +33,7 @@
     </article>
 
     <div class="container" style="background-color:#e3f2fd">
-      <h2>Portfolio</h2>
+      <h2 id="portfolio">Portfolio</h2>
       <hr>
       <div class="d-flex flex-row flex-wrap">
         <img src="img\portfolio\photo-1.jpg" alt="">
@@ -53,7 +52,7 @@
     </div>
 
     <div class="container">
-      <h2>Kontakt</h2>
+      <h2 id="contact">Kontakt</h2>
       <hr>
       <div class="container">
       <input type="text" placeholder="Imię" name="firstName">
