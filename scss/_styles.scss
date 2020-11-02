@@ -38,31 +38,33 @@
 
   ul {
     margin: 0 auto;
-  
+
     li {
-    text-transform: uppercase;
+      text-transform: uppercase;
+
       a {
         color: #ffffff !important;
         font-size: 1.3rem;
-        
-        &:hover {   
+
+        &:hover {
           text-decoration: underline;
         }
-      }   
+      }
     }
   }
 }
 
 .section-a {
   margin: 10rem 0;
-    h1 {
-      @include header()
-    }
-    
 
-    img {
-      height: 70vh;
-    }
+  h1 {
+    @include header()
+  }
+
+
+  img {
+    height: 70vh;
+  }
 }
 
 .section-b {
