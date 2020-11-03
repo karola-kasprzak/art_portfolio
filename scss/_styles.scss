@@ -34,7 +34,8 @@
 
 .navbar {
   margin-top: 0;
-  height: 6rem;
+  min-height: 6rem;
+  overflow: scroll;
 
   ul {
     margin: 0 auto;
@@ -51,8 +52,9 @@
         }
       }
     }
-  }
+  } 
 }
+
 
 .section-a {
   margin: 10rem 0;
