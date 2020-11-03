@@ -32,29 +32,15 @@
 
 //styles
 
-.navbar {
-  margin-top: 0;
-  min-height: 6rem;
-  overflow: scroll;
-
-  ul {
-    margin: 0 auto;
-
-    li {
-      text-transform: uppercase;
-
-      a {
-        color: #ffffff !important;
-        font-size: 1.3rem;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
+.menu-link {
+    text-transform: uppercase;
+    color: $white !important;
+    font-size: 1.3rem;  
+    &:hover {
+      color: $gray-100;
+      text-shadow: 1px 2px darken($primary,20%);    
     }
-  } 
-}
-
+  }
 
 .section-a {
   margin: 10rem 0;

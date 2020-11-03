@@ -9649,26 +9649,15 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-.navbar {
-  margin-top: 0;
-  height: 6rem;
-}
-
-.navbar ul {
-  margin: 0 auto;
-}
-
-.navbar ul li {
+.menu-link {
   text-transform: uppercase;
-}
-
-.navbar ul li a {
-  color: #ffffff !important;
+  color: #fff !important;
   font-size: 1.3rem;
 }
 
-.navbar ul li a:hover {
-  text-decoration: underline;
+.menu-link:hover {
+  color: #f8f9fa;
+  text-shadow: 1px 2px #004a99;
 }
 
 .section-a {
