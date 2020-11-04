@@ -81,10 +81,19 @@ hr {
   @include button()
 }
 
+.section-c {
+  #alert-field {
+    height: 60px; 
+    overflow:hidden;
+  }
+}
+
 .section-d {
   font-size: 2.5rem;
   margin-bottom: 6rem;
 }
+
+
 
 footer {
   color: $gray-600;
