@@ -24,7 +24,6 @@ function addMessage () {
   let newMsg = new Message(name,email,message,date);
   allMessages.push(newMsg);
   console.log("addMessage -> allMessages", allMessages);
-  return; 
 }
 
     //clears input fields
@@ -42,9 +41,7 @@ function createAlert (alertType, alertMessage) {
   alertDiv.setAttribute("class", `alert ${alertType} alert-dismissible fade show`);
   alertDiv.setAttribute("role", "alert");
   alertDiv.innerHTML = `${alertMessage}<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>`
-  rootDiv.appendChild(alertDiv);
-
-  return 
+  rootDiv.appendChild(alertDiv); 
 }
     
     //removes an alert in DOM
