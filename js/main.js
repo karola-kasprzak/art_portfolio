@@ -31,9 +31,15 @@ function clearInput() {
   document.querySelector('#message').value = "";
 };
 
+function displayAlert () {
+
+};
+
 //scripts:
 submitBtn.addEventListener("click", () => {
-  addMessage()
-  clearInput()
+  addMessage();
+  clearInput();
+  displayAlert();
 })
+
 
