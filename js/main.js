@@ -35,28 +35,50 @@ function clearInput() {
 };
 
     //creates an Alert div in DOM
-function createAlert () {
+function createAlert (alertType, alertMessage) {
   
   const rootDiv = document.getElementById("alert-field");
   const alertDiv = document.createElement("div");
-  alertDiv.setAttribute("class", "alert alert-primary alert-dismissible fade show");
+  alertDiv.setAttribute("class", `alert ${alertType} alert-dismissible fade show`);
   alertDiv.setAttribute("role", "alert");
-  alertDiv.innerHTML = `<strong>Dziękuję za wiadomość!</strong> Skontaktuję się z Tobą wkrótce.<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>`
+  alertDiv.innerHTML = `${alertMessage}<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>`
   rootDiv.appendChild(alertDiv);
 
   return 
 }
     
-    //allows to set a timer to display alert
-function displayAlert () {
-  createAlert();
+    //removes an alert in DOM
+function removeAlert () {
+  mydiv = document.getElementById("alert-field");
+while (mydiv.firstChild) {
+  mydiv.removeChild(mydiv.firstChild);
+  }
+}
+
+    //timeout function to remove alert after 5 s
+function clearAlert () {    
+    setTimeout(removeAlert, 5000);
+};
+
+    //Input fields validation
+function validateInput () {
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let message = document.getElementById("message").value;
+  if (name === "" || email === "" || message === "") {
+    createAlert("alert-danger", "Musisz uzupełnić wszystkie pola")
+  } else {
+    addMessage();
+    clearInput();
+    createAlert("alert-primary","<strong>Dziękuję za wiadomość!</strong> Skontaktuję się z Tobą wkrótce.");
+    clearAlert();
+  }
 };
 
 //scripts:
 submitBtn.addEventListener("click", () => {
-  addMessage();
-  clearInput();
-  displayAlert();
+  removeAlert();
+  validateInput(); 
 })
 
 
